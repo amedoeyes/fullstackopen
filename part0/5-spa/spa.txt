@@ -1,0 +1,15 @@
+title SPA
+Client->Server:GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Client:main.css
+Client->Server:GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Client:main.js
+note over Client
+    Request JSON file from the Server.
+end note
+Client->Server:GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Client:data.json
+note over Client
+    Parse the data from the JSON file,
+    add it to an array, and render the notes 
+    based on the content of that array.
+end note 

@@ -1,0 +1,8 @@
+title New Note
+Client->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server
+    Take data from the body of the POST request
+    and add it to the notes array.
+end note
+server-->Client: URL redirect to /notes
+note over Client: Page reloads.

@@ -1,0 +1,14 @@
+title SPA New Note
+note over Client
+    Add the submitted text and the date     
+    to the notes array.
+end note
+note over Client
+    Rerender the notes using the notes array.
+end note
+note over Client
+    Configure a POST request with type JSON
+    and send the newly added note to server.
+end note
+
+Client->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
